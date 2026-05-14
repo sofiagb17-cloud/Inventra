@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     min-height: 100vh;
     display: flex;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* ── Panel izquierdo (morado) ── */
@@ -94,7 +94,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 48px;
-    min-height: 100vh;
+    min-height: auto;
 }
 
 /* Tarjeta del formulario */
