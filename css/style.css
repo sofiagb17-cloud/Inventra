@@ -1,32 +1,35 @@
-/* ===================================== */
-/* MODIFICACIÓN 2: RESET GENERAL */
-/* ===================================== */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html,body{
+    width:100%;
+    overflow-x:hidden;
+}
+
 body{
     font-family:'Segoe UI', sans-serif;
-    min-height:100vh;
-
-    /* MODIFICACIÓN 3 */
-    display:flex;
-    flex-wrap:wrap;
-
-    overflow-x:hidden;
     background:#f7f2ff;
 }
 
-/* ===================================== */
+/* CONTENEDOR */
+
+.container-login{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    flex-wrap:wrap;
+}
+
 /* PANEL IZQUIERDO */
-/* ===================================== */
 
 .left{
-    /* MODIFICACIÓN 4 */
-    width:50%;
+    flex:1;
+    min-width:320px;
+
     min-height:100vh;
 
     background:linear-gradient(180deg,#7b2ff7,#5f0fd8);
@@ -34,6 +37,7 @@ body{
     position:relative;
 
     padding:40px 30px;
+
     color:white;
 
     display:flex;
@@ -41,7 +45,22 @@ body{
     justify-content:space-between;
 }
 
-/* Círculos decorativos */
+/* PANEL DERECHO */
+
+.right{
+    flex:1;
+    min-width:320px;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+}
+
+/* BOLITAS */
 
 .blob{
     position:absolute;
@@ -65,45 +84,41 @@ body{
     right:-80px;
 }
 
-/* ===================================== */
 /* LOGO */
-/* ===================================== */
 
 .logo-circle{
-
-    /* MODIFICACIÓN 5 */
     width:180px;
     height:180px;
 
     border-radius:50%;
-    background:white;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    background:white;
 
     overflow:hidden;
 
     margin:auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .logo-circle img{
-
-    /* MODIFICACIÓN 6 */
     width:100%;
     height:100%;
     object-fit:cover;
 }
 
-/* ===================================== */
 /* TEXTOS */
-/* ===================================== */
 
 .brand-sub{
     margin-top:15px;
-    font-size:13px;
-    letter-spacing:3px;
+
     text-align:center;
+
+    font-size:13px;
+
+    letter-spacing:3px;
 }
 
 .left-mid{
@@ -111,12 +126,13 @@ body{
 }
 
 .big-title{
-
-    /* MODIFICACIÓN 7 */
-    font-size:55px;
-    font-weight:bold;
-    line-height:1.1;
     text-align:center;
+
+    font-size:55px;
+
+    font-weight:bold;
+
+    line-height:1.1;
 }
 
 .big-title span{
@@ -125,21 +141,22 @@ body{
 
 .desc{
     margin-top:25px;
-    font-size:17px;
-    line-height:1.7;
+
     text-align:center;
+
+    font-size:17px;
+
+    line-height:1.7;
 }
 
-/* ===================================== */
 /* FEATURES */
-/* ===================================== */
 
 .feat{
     margin-top:25px;
 
-    /* MODIFICACIÓN 8 */
     display:flex;
     align-items:center;
+
     gap:15px;
 }
 
@@ -151,45 +168,26 @@ body{
     font-size:16px;
 }
 
-/* ===================================== */
-/* COPYRIGHT */
-/* ===================================== */
+/* FOOTER */
 
 .left-bot{
     margin-top:40px;
+    text-align:center;
 }
 
 .pill{
     background:rgba(255,255,255,.2);
+
     padding:10px 20px;
+
     border-radius:50px;
+
     font-size:13px;
 }
 
-/* ===================================== */
-/* PANEL DERECHO */
-/* ===================================== */
-
-.right{
-
-    /* MODIFICACIÓN 9 */
-    width:50%;
-    min-height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    padding:20px;
-}
-
-/* ===================================== */
-/* CARD LOGIN */
-/* ===================================== */
+/* CARD */
 
 .card{
-
-    /* MODIFICACIÓN 10 */
     width:100%;
     max-width:420px;
 
@@ -203,20 +201,26 @@ body{
 }
 
 .card-title{
+    text-align:center;
+
     font-size:40px;
+
     font-weight:bold;
+
     color:#2d1c42;
 }
 
 .card-sub{
+    text-align:center;
+
     margin-top:10px;
+
     color:#8c72b3;
+
     line-height:1.5;
 }
 
-/* ===================================== */
 /* INPUTS */
-/* ===================================== */
 
 .inp-wrap{
     margin-top:25px;
@@ -224,15 +228,17 @@ body{
 
 .inp-label{
     display:block;
+
     margin-bottom:8px;
+
     font-size:13px;
+
     letter-spacing:2px;
+
     color:#6e48aa;
 }
 
 input{
-
-    /* MODIFICACIÓN 11 */
     width:100%;
 
     padding:16px;
@@ -250,13 +256,9 @@ input:focus{
     border-color:#7b2ff7;
 }
 
-/* ===================================== */
-/* BOTÓN */
-/* ===================================== */
+/* BOTON */
 
 .btn-in{
-
-    /* MODIFICACIÓN 12 */
     width:100%;
 
     margin-top:30px;
@@ -272,6 +274,7 @@ input:focus{
     color:white;
 
     font-size:16px;
+
     font-weight:bold;
 
     cursor:pointer;
@@ -283,9 +286,7 @@ input:focus{
     background:#7b2ff7;
 }
 
-/* ===================================== */
 /* LINKS */
-/* ===================================== */
 
 .links{
     margin-top:20px;
@@ -297,28 +298,27 @@ input:focus{
     text-decoration:none;
 }
 
-/* ===================================== */
-/* ALERTA ERROR */
-/* ===================================== */
+/* ERROR */
 
 .alert-error{
     background:#ffdede;
+
     color:#b30000;
+
     padding:12px;
+
     border-radius:10px;
+
     margin-top:20px;
+
     text-align:center;
 }
 
-/* ===================================== */
-/* RESPONSIVE TABLET */
-/* ===================================== */
+/* TABLET */
 
-/* MODIFICACIÓN 13 */
+@media(max-width:1024px){
 
-@media (max-width:1024px){
-
-    body{
+    .container-login{
         flex-direction:column;
     }
 
@@ -327,31 +327,26 @@ input:focus{
         width:100%;
     }
 
-    .right{
-        padding:40px 20px;
+    .left{
+        min-height:auto;
     }
 }
 
-/* ===================================== */
-/* RESPONSIVE CELULAR */
-/* ===================================== */
+/* CELULAR */
 
-/* MODIFICACIÓN 14 */
-
-@media (max-width:768px){
+@media(max-width:768px){
 
     .left{
         padding:30px 20px;
-        min-height:auto;
     }
 
     .right{
-        min-height:auto;
         padding:20px;
+        min-height:auto;
     }
 
     .big-title{
-        font-size:36px;
+        font-size:34px;
     }
 
     .desc{
