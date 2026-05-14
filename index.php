@@ -20,7 +20,7 @@ if (isset($_COOKIE[session_name()])) {
     <title>INVENTRA — Iniciar sesión</title>
 
     <!-- ── Estilos específicos de la página de login ── -->
-    <link rel="stylesheet" href="css/styles.css?v=3">
+    <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
